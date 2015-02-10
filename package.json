@@ -1,6 +1,6 @@
 {
   "name": "node-ns15-common-data",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Common data library for Node Summit 2015 demo.",
   "main": "index.js",
   "repository": {
@@ -19,6 +19,9 @@
     "url": "https://github.com/scommisso/node-ns15-common-data/issues"
   },
   "homepage": "https://github.com/scommisso/node-ns15-common-data",
+  "dependencies": {
+    "nedb": "^1.1.1"
+  },
   "devDependencies": {
     "chai": "~1.9.1",
     "istanbul": "~0.2.11",
@@ -37,6 +40,7 @@
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",
     "report": "istanbul report cobertura",
     "pretest": "npm run jshint && npm run jscs",
+    "start": "node index",
     "test": "npm run cover && npm run report"
   }
 }
