@@ -1,6 +1,6 @@
 {
   "name": "node-ns15-common-data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Common data library for Node Summit 2015 demo.",
   "main": "index.js",
   "repository": {
