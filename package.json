@@ -1,0 +1,42 @@
+{
+  "name": "node-ns15-common-data",
+  "version": "0.0.1",
+  "description": "Common data library for Node Summit 2015 demo.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scommisso/node-ns15-common-data.git"
+  },
+  "keywords": [
+    "node",
+    "summit",
+    "demo",
+    "test"
+  ],
+  "author": "Stephen Commisso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scommisso/node-ns15-common-data/issues"
+  },
+  "homepage": "https://github.com/scommisso/node-ns15-common-data",
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "istanbul": "~0.2.11",
+    "jscs": "~1.8.0",
+    "jshint": "~2.5.10",
+    "mocha": "~1.21.4",
+    "mocha-istanbul": "~0.2.0",
+    "proxyquire": "~1.0.1",
+    "sinon": "~1.10.2",
+    "sinon-chai": "~2.5.0"
+  },
+  "scripts": {
+    "jscs": "jscs --config .jscsrc lib/ test/",
+    "jshint": "jshint lib && jshint test",
+    "mocha": "mocha -w -R spec",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "report": "istanbul report cobertura",
+    "pretest": "npm run jshint && npm run jscs",
+    "test": "npm run cover && npm run report"
+  }
+}
