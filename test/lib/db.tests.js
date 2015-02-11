@@ -22,6 +22,10 @@ describe('lib/db', function () {
     });
   });
 
+  it('exposes an object', function () {
+    expect(db).to.be.an.object;
+  });
+
   describe('widgets database', function () {
     testDatabase('widgets');
   });
